@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> titre </title>
+      <%= link_to "Ask your questions", answer_path %>
+  </head>
+    <body>
+      <div class="banner">
+        <h1>WELCOME TO YOUR PERSONAL STUPID COACH</h1>
+        <p>So, what is your question ?</p>
+<!-- afficher la question afficher la réponse-->
+ <%= @answer %>
+      <form action="/answer" method="get">
+        <input type="text" name="question">
+        <input type="submit" value="Ask!">
+      </form>
+
+      </div>
+
+       </body>
+      </html>
+
+
+
+
